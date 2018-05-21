@@ -26,6 +26,6 @@ install(FILES
 )
 
 install(FILES
-	${CMAKE_PROJECT_NAME}.pc
+	${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}.pc
     DESTINATION share/pkgconfig
 )
