@@ -1,0 +1,8 @@
+prefix=/usr
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: @CMAKE_PROJECT_NAME@
+Description: Aeolus I/O module
+Version: @PROJECT_VERSION@
+Cflags: -I${includedir} -laeolus_io -L${libdir}

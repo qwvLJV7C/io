@@ -1,0 +1,1 @@
+double core_func();
