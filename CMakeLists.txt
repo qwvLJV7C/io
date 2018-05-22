@@ -6,7 +6,7 @@ set(PROJECT_VERSION 2.5.8)
 
 add_library(${CMAKE_PROJECT_NAME} SHARED ${CMAKE_PROJECT_NAME}.cpp)
 
-add_executable(app main.cpp)
+add_executable(main main.cpp)
 
 configure_file(${CMAKE_PROJECT_NAME}.pc.in ${CMAKE_PROJECT_NAME}.pc)
 
