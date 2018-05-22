@@ -6,7 +6,7 @@ set(PROJECT_VERSION 2.5.8)
 
 add_library(${CMAKE_PROJECT_NAME} SHARED ${CMAKE_PROJECT_NAME}.cpp)
 
-add_executable(main main.cpp)
+add_executable(gee_main_${CMAKE_PROJECT_NAME} main.cpp)
 
 configure_file(${CMAKE_PROJECT_NAME}.pc.in ${CMAKE_PROJECT_NAME}.pc)
 
@@ -14,7 +14,7 @@ set_target_properties(${CMAKE_PROJECT_NAME}
     PROPERTIES   VERSION ${PROJECT_VERSION}
 )
 
-install(TARGETS ${CMAKE_PROJECT_NAME}
+install(TARGETS gee_main_${CMAKE_PROJECT_NAME} ${CMAKE_PROJECT_NAME}
         RUNTIME DESTINATION bin
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib
